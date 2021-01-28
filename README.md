@@ -10,7 +10,6 @@ Follow the steps below to verify:
 
 [3] In line 21, if you write “LGPR(0.4)”, you can verify the LGPR method; if you write “T.RandomGrayscale(0.05)”, you can verify the GGPR method; if you write “Fuse_RGB_Gray_Sketch()”, you can verify the Multi-Modal Defense method.
 
-The pictures below are for your reference only:
 
 
 Just in case, due to torch version issues, you may also need to replace lines 174-179 in "reid-strong-baseline/modeling/baseline.py" with the following code:
@@ -22,12 +21,10 @@ Just in case, due to torch version issues, you may also need to replace lines 17
                 continue
             self.state_dict()[k].copy_(param_dict.state_dict()[k])
 
-The pictures below are for your reference only:
-
 
 
 [4] Change the "MAX_EPOCHS" in line 28 of the "reid-strong-baseline/configs/softmax_triplet_with_center.yml" file to 480 (set a larger value and then observe the training log to get the weight of the optimal epoch, generally only about 320 epochs are required)
-The pictures below are for your reference only:
+
 
 
 Refer to the following commands to train the model and test:
@@ -43,9 +40,8 @@ python3 tools/test.py --config_file='configs/softmax_triplet_with_center.yml' MO
 #############################################################
 Adversarial Defense Experiment:
 
-strong baseline provides trained model weights on github, which can be used for comparative experiments adversarial defense. Since the weight file is relatively large and web pointers are not allowed, we cannot provide our trained weight files for verification, this requires training by adding "Fuse_RGB_Gray_Sketch()" through step [3]. Then use the trained adversarial samples we provided for testing: directly replace the adversarial sample set with the query set in the original Market-501 dataset, and then run the test command. The adversarial samples we provide are "query_Metric-Attack" and "query_MS-SSIM-Attack_epoch30".
+strong baseline provides trained model weights on github, which can be used for comparative experiments adversarial defense. Since the weight file is relatively large and web pointers are not allowed, we cannot provide our trained weight files for verification, this requires training by adding "Fuse_RGB_Gray_Sketch()" through step [3]. Then use the trained adversarial samples we provided for testing: directly replace the adversarial sample set with the query set in the original Market-501 dataset, and then run the test command. The adversarial samples we provide are "query_Metric-Attack"(https://drive.google.com/file/d/1eZ-ePSFz_X77Z6UUupPb2euUxgz4R0Sb/view?usp=sharing) and "query_MS-SSIM-Attack_epoch30"(https://drive.google.com/file/d/12dD6ZZ5BtxJz3pQ5kZa35jXWe7FPbdaE/view?usp=sharing).
 When testing multi-modal defense, you should also add “T.Resize([100, 50])” or “T.Resize([110, 50])” to lines 25-26 of ‘reid-strong-baseline/data/transforms/build.py’
-The pictures below are for your reference only:
 
 
 

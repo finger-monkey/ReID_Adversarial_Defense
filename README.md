@@ -1,5 +1,5 @@
 # ReID_Adversarial_Defense
-This code is for  A Person Re-identification Data Augmentation Method with Adversarial Defense Effect(https://arxiv.org/abs/2101.08783)
+This code is for  A Person Re-identification Data Augmentation Method with Adversarial Defense Effect(https://arxiv.org/abs/2101.08783,github:https://github.com/finger-monkey/Data-Augmentation)
 
 By providing our code, you can verify the validity of the method proposed in this paper. The github links of the strong baseline can be found in the paper(the dataset can be downloaded from github)
 

@@ -45,7 +45,5 @@ Adversarial Defense Experiment:
 
 strong baseline provides trained model weights on github, which can be used for comparative experiments adversarial defense. Since the weight file is relatively large and web pointers are not allowed, we cannot provide our trained weight files for verification, this requires training by adding "Fuse_RGB_Gray_Sketch()" through step [3]. Then use the trained adversarial samples we provided for testing: directly replace the adversarial sample set with the query set in the original Market-501 dataset, and then run the test command. The adversarial samples we provide are "query_Metric-Attack"(https://drive.google.com/file/d/1eZ-ePSFz_X77Z6UUupPb2euUxgz4R0Sb/view?usp=sharing) and "query_MS-SSIM-Attack_epoch30"(https://drive.google.com/file/d/12dD6ZZ5BtxJz3pQ5kZa35jXWe7FPbdaE/view?usp=sharing).
 When testing multi-modal defense, you should also add “T.Resize([100, 50])” or “T.Resize([110, 50])” to lines 25-26 of ‘reid-strong-baseline/data/transforms/build.py’
-
-We provide a trained model weight of multi-modal defense here: https://drive.google.com/file/d/1Ybg106TxjT1attmQPfmIFJiEuN6zICOb/view?usp=sharing   and you can load this model weight into https://github.com/layumi/Person_reID_baseline_pytorch, the baseline code, for testing.
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 

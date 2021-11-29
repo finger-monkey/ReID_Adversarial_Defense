@@ -47,5 +47,4 @@ strong baseline provides trained model weights on github, which can be used for 
 When testing multi-modal defense, you should also add “T.Resize([100, 50])” or “T.Resize([110, 50])” to lines 25-26 of ‘reid-strong-baseline/data/transforms/build.py’
 
 The multi-modal defense model weights for strong_baseline are as follows：https://drive.google.com/file/d/1YY3QVFbwHncUFMn8n3SUutxxFjoISWQr/view?usp=sharing
------------------------------------------------------------------------------------------------------------------------------------------------------
 

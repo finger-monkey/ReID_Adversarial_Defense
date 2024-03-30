@@ -49,3 +49,20 @@ When testing multi-modal defense, you should also add “T.Resize([100, 50])” 
 The multi-modal defense model weights for strong_baseline are as follows：
 https://drive.google.com/file/d/1YY3QVFbwHncUFMn8n3SUutxxFjoISWQr/view?usp=sharing  
 Please use query_MS-SSIM-Attack_epoch30 to test.
+
+if you use our code, please  cite the following paper:
+
+```
+@inproceedings{colorAttack2022,
+  title={Person re-identification method based on color attack and joint defence},
+  author={Gong, Yunpeng and Huang, Liqing and Chen, Lifei},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={4313--4322},
+  year={2022}
+}
+```
+if you use our code, please  cite the following paper:
+
+## Contact Me
+
+Email: fmonkey625@gmail.com

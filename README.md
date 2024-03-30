@@ -61,7 +61,6 @@ if you use our code, please  cite the following paper:
   year={2022}
 }
 ```
-if you use our code, please  cite the following paper:
 
 ## Contact Me
 

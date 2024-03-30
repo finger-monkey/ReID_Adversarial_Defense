@@ -1,5 +1,5 @@
 # ReID_Adversarial_Defense
-Thank you for your attention, this code is for  A Person Re-identification Data Augmentation Method with Adversarial Defense Effect(https://arxiv.org/abs/2101.08783)
+Thank you for your attention, this code is for  A Person Re-identification Data Augmentation Method with Adversarial Defense Effect(https://arxiv.org/abs/2101.08783)==>update:The final version of the paper is titled "Person Re-identification Method Based on Color Attack and Joint Defense," published at CVPR 2022. The complete code is published at https://github.com/finger-monkey/LTA_and_joint-defence.
 
 The latest version of the paper 'Robust Person Re-identification with Multi-Modal Joint Defence' can be viewed at http://arxiv.org/abs/2111.09571 (The complete code for the new version of the paper will be open sourced after the paper is published)
 
